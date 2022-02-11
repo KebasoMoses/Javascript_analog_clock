@@ -1,0 +1,102 @@
+:root{
+    --neutral-5: #f2ecee;
+    --rotation: 0;
+}
+
+  
+*, *::after, *::before {
+    box-sizing: border-box;
+    /* font-family: Gotham Rounded, sans-serif; */
+  }
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--neutral-5);
+}
+
+/* Nav Bar Styles CSS */
+.nav-bar{
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 3px 7px 1px rgba(0, 0, 0, 0.07),
+      0px -3px 7px 1px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.nav-brand{
+    text-align: center;
+    margin: auto;
+    
+}
+
+.nav-brand h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 350;
+
+}
+
+/* The clock styling CSS */
+
+.clock{
+    width: 400px;
+    height: 400px;
+    background: rgba(63, 222, 10, .5);
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    /* border: 2px solid black; */
+    max-width: 500px;
+    background-image: url("./Clock.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+}
+
+.section{
+    height: 100vh;
+    width:80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour-hand,
+.min-hand,
+.sec-hand{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+
+.hour-hand{
+    width: 25%;
+}
+
+
+/* Footer */
+.footer{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+ h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
+    font-weight: lighter;
+    font-size: 12px;
+}
